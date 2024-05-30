@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1ede3;
+    flex-direction: column;
+    gap: 32px;
+}
+.time-circle{
+    width: 500px;
+    height: 500px;
+    border: 6px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px grey;
+    background: linear-gradient(to bottom, #f83600 0%, #f5c84e 50%);
+    position: relative;
+}
+.sun{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #f2ef88;
+    position: absolute;
+    bottom: 80px;
+    right: 170px;
+    box-shadow: 0 0 15px #e6e26f;
+        
+}
+.moon{}
+.stars{}
+.water{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(to left, #689794, #b5c570, #689794);
+
+}
+#intro-text{
+    text-align: center ;
+    line-height: 48px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+.switch{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #eca50c;
+    position: relative;
+    transition: all 2s ease;
+    
+}
+.circle{
+    position: absolute;
+    background: #fff;
+    left: 4px;
+    top: 4px;
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
+
+}
+.switched{
+    position: absolute;
+    background: #fff;
+    right: 4px;
+    top: 4px;
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
+
+}
