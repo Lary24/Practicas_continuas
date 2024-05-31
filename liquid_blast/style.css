@@ -10,6 +10,7 @@ body{
     align-items: center;
     background: #1d2b3a;
     overflow: hidden;
+    filter: url(#gooey)
 }
 .circle{
     position: relative;
@@ -18,10 +19,20 @@ body{
     border-radius: 50%;
     background: linear-gradient(90deg, #f00, #0ff);
     cursor: pointer;
+}
 .particles{
     position: absolute;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: linear-gradient(90deg, #f00, #0ff);;
+    background: linear-gradient(90deg, #f00, #0ff);
+    z-index: -1;
+}
+@keyframes animate {
+    0%,100% {
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(var(--x), var(--y));
+    }
 }
